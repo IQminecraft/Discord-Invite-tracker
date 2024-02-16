@@ -1,5 +1,6 @@
 import requests
-import json
+import os
+import time
 
 def setup():
     link = input("Discordのinvite link : ")
@@ -34,10 +35,19 @@ def info(res):
 
 
     
-
+print("""
+██╗███╗░░██╗██╗░░░██╗██╗████████╗███████╗  ████████╗██████╗░░█████╗░░█████╗░██╗░░██╗███████╗██████╗░
+██║████╗░██║██║░░░██║██║╚══██╔══╝██╔════╝  ╚══██╔══╝██╔══██╗██╔══██╗██╔══██╗██║░██╔╝██╔════╝██╔══██╗
+██║██╔██╗██║╚██╗░██╔╝██║░░░██║░░░█████╗░░  ░░░██║░░░██████╔╝███████║██║░░╚═╝█████═╝░█████╗░░██████╔╝
+██║██║╚████║░╚████╔╝░██║░░░██║░░░██╔══╝░░  ░░░██║░░░██╔══██╗██╔══██║██║░░██╗██╔═██╗░██╔══╝░░██╔══██╗
+██║██║░╚███║░░╚██╔╝░░██║░░░██║░░░███████╗  ░░░██║░░░██║░░██║██║░░██║╚█████╔╝██║░╚██╗███████╗██║░░██║
+╚═╝╚═╝░░╚══╝░░░╚═╝░░░╚═╝░░░╚═╝░░░╚══════╝  ░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝
+""")
+time.sleep(0.5)
 link = setup()
 response = send(link)
 info(response)
+os.system('clear')
 print(f"""
 
 ██╗███╗░░██╗██╗░░░██╗██╗████████╗███████╗██████╗░
@@ -61,6 +71,6 @@ Guild Description : {guild_description}
 Guild Icon : {guild_icon}
 Guild Banner : {guild_banner if not guild_banner is None else "None"}
 Guild Splash : {guild_splash if not guild_splash is None else "None"}
-Default Link : {f"https://discord.gg/{vanity_url_code}" if not vanity_url_code is None else "None"}
+custom Link : {f"https://discord.gg/{vanity_url_code}" if not vanity_url_code is None else "None"}
 """)
 input()
