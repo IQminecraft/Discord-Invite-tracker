@@ -65,6 +65,7 @@ Inviter ID : {inviter_id}
 ██║░░╚██╗██║░░░██║██║██║░░░░░██║░░██║
 ╚██████╔╝╚██████╔╝██║███████╗██████╔╝
 ░╚═════╝░░╚═════╝░╚═╝╚══════╝╚═════╝░
+invite link : https://discord.gg/{link}
 Guild Name : {guild_name}
 Guild ID : {guild_id}
 Guild Description : {guild_description}
