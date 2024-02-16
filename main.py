@@ -47,7 +47,7 @@ time.sleep(0.5)
 link = setup()
 response = send(link)
 info(response)
-os.system('clear')
+os.system('cls')
 print(f"""
 
 ██╗███╗░░██╗██╗░░░██╗██╗████████╗███████╗██████╗░
