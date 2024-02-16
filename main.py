@@ -63,4 +63,4 @@ Guild Banner : {guild_banner if not guild_banner is None else "None"}
 Guild Splash : {guild_splash if not guild_splash is None else "None"}
 Default Link : {f"https://discord.gg/{vanity_url_code}" if not vanity_url_code is None else "None"}
 """)
-
+input()
